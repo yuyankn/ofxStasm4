@@ -23,7 +23,7 @@ void ofxStasm4::update() {
 	float fLandmarks[2 * stasm_NLANDMARKS]; // x,y coords (note the 2)
 
     char xmlPath[256];
-    sprintf(xmlPath, "%s../../../../../addons/ofxStasm4/libs/data/",
+    sprintf(xmlPath, "%s../../../libs/data/",
             ofToDataPath("").c_str());
 	if (!stasm_search_single(&foundface, fLandmarks,
 							 (const char*)srcImg.data, srcImg.cols, srcImg.rows, "",
